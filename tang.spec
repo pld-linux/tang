@@ -5,7 +5,7 @@
 Summary:	Network Presence Binding Daemon
 Name:		tang
 Version:	15
-Release:	1
+Release:	2
 License:	GPL v3
 Group:		Applications
 Source0:	https://github.com/latchset/tang/releases/download/v%{version}/%{name}-%{version}.tar.xz
@@ -87,9 +87,9 @@ fi
 %doc COPYING
 %attr(750, tang, tang) /var/db/tang
 %attr(755,root,root) %{_bindir}/tang-show-keys
-%{_libexecdir}/tangd
-%{_libexecdir}/tangd-keygen
-%{_libexecdir}/tangd-rotate-keys
+%attr(755,root,root) %{_libexecdir}/tangd
+%attr(755,root,root) %{_libexecdir}/tangd-keygen
+%attr(755,root,root) %{_libexecdir}/tangd-rotate-keys
 %{systemdunitdir}/tangd@.service
 %{systemdunitdir}/tangd.socket
 %{_mandir}/man8/tang.8*
