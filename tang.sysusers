@@ -1,1 +1,2 @@
-u tang - "Tang Network Presence Daemon user" /usr/share/empty -
+u tang 357:357 "Tang Network Presence Daemon user" /usr/share/empty -
+g tang 357
